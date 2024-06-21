@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    height: 800px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    line-height: 10px;
+    border: 5px solid;
+    line-height: 30px;
+
+}
+
+@media(min-width:0px) and(max--width: 750px) {
+    #parent {
+        height: 400px;
+        width: 300px;
+        background-color: aqua;
+
+    }
+
+    .box {
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+        border: 1px solid;
+        line-height: 10px;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+
+    }
+}
+
+/* Tab Range 751px to 1001px  */
+@media(min-width: 751px) and (max-width: 1000px) {
+    #parent {
+        height: 1000px;
+        width: 100%;
+        background-color: red;
+
+    }
+
+    .box {
+        height: 80px;
+        width: 80px;
+        background-color: black;
+        text-align: center;
+        line-height: 10px;
+        background-color: blue;
+
+
+    }
+}

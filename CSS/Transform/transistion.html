@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        #parent{
+            height: 800px;
+            width: 700px;
+            border: 5px solid white;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: black;
+        }
+        #child{
+            height: 500px;
+            width: 400px;
+            border: 1px solid;
+            box-sizing: border-box;
+            background-image: url(/pexels-albert-white-361104.jpg);
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #child:hover{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+            /* transition-property: width,hight; */
+            width: 800px;
+            /* height: 800px; */
+            border-radius: 50%;
+            transition-timing-function: linear;
+            /* transform-origin:bottom; */
+            /* transform-origin:left; */
+            transform-origin: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

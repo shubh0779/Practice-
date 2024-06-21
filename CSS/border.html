@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inp{
+            height: 300px;
+            width: 300px;
+            /* ----------- Single Line */
+            /* border-width: 2px;
+            border-style: dashed;
+            border-color: red; */
+
+                /* ======== Double Line */
+          border: 8px double blue;
+        }
+        #child{
+            height: 200px;
+            width: 200px;
+            border: 4px dotted;
+            margin: 35px 50px 50px 50px;
+        }
+        /*  */
+        #son{
+            height: 100px;
+            width: 100px;
+            border: 8px red;
+            border-style: dashed;
+            margin: 25px 50px 50px 45px;
+        }
+        #son2{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="inp">Double 
+        <div id="child"> dotted
+            <div id="son"> Dashed</div>
+        </div>
+    </div>
+</body>
+</html>

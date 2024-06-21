@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        #conic1 {
+            border-radius: 50%;
+            background-image: conic-gradient(red 0deg, red 45deg, yellow 45deg, yellow 90deg,
+                    blue 90deg, blue 135deg, green 135deg, green 180deg, purple 180deg, purple 225deg,
+                    gray 225deg, gray 270deg, gold 270deg, gold 315deg, lime 315deg, lime 360deg);
+        }
+
+        #conic2 {
+            background-image: conic-gradient(from 90deg, red, yellow, blue, green);
+        }
+
+        #conic3 {
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 0deg 30deg, blue 0deg 40deg);
+        }
+        #conic4{
+                border-radius: 30%;
+                background-image: repeating-linear-gradient(orange 10%, blue 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="conic1"></div>
+    <div class="container" id="conic2"></div>
+    <div class="container" id="conic3"></div>
+    <div class="container" id="conic4"></div>
+</body>
+
+</html>
